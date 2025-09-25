@@ -1,0 +1,49 @@
+🔹 Part 1: Strings
+Notes:
+
+Strings are immutable (you cannot change them in place).
+
+Common operations: slicing, searching, replacing, formatting.
+
+Useful methods: .lower(), .upper(), .strip(), .split(), .join(), .replace().
+
+
+Part 2: Dictionaries
+Notes:
+
+Dictionary = key-value pairs.
+
+Keys must be immutable (string, int, tuple).
+
+Values can be anything (list, dict, object).
+
+
+
+✅ Step 1: Hints (Think Before Seeing Solutions)
+Easy
+
+Reverse a string without slicing
+→ Use a loop or "".join(reversed(string)).
+
+Count vowels in a string
+→ Loop through characters, check if in "aeiou".
+
+Palindrome check
+→ Compare string with its reverse.
+
+Character frequency
+→ Use a dictionary (dict.get(char, 0) + 1).
+
+Medium
+
+First non-repeating character
+→ Count occurrences, then return the first with count 1.
+
+Word with max frequency in sentence
+→ Split sentence → dictionary count → max().
+
+Merge two dictionaries
+→ Use {**dict1, **dict2} or .update().
+
+Sort dictionary by values
+→ Use sorted(dict.items(), key=lambda x: x[1]).
