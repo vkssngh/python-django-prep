@@ -17,3 +17,12 @@ def is_palindrome(s):
 
 print(is_palindrome("book"))  # Output: False
 print(is_palindrome("madam"))  # Output: True
+
+def reverse_string(s):
+    """Return the reverse of the input string s."""
+    output = ''
+    for char in s:
+        output = char + output
+    return output
+    
+print(reverse_string("hello"))  # Output: "olleh"
